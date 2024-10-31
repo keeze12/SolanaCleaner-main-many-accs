@@ -12,3 +12,10 @@ npm install
 для закрытия пустых счетов пишите в командную строку
 npm run clean
 
+есть еще, но я настоятельно рекомендую его лучше не запускать, если есть деньги на счетах они сожгутся
+
+npm run fullclean 
+
+Closes !!!ALL!!! accounts. !!! IF YOU HAVE ANY TOKENS ON THOSE ACCOUNTS THEY WILL BE LOST FOREVER!!!
+
+
