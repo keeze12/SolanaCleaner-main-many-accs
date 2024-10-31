@@ -1,34 +1,14 @@
 # Solana Account Closer
+original https://github.com/D3AD-E/SolanaCleaner
 
-This Node.js TypeScript application facilitates the closure of Solana blockchain accounts.
+вам нужно установить для начала node.js
 
-**!!! I AM NOT RESPONSIBLE FOR RISKS AND FUNDS LOSS WHILE USING THIS TOOL !!!**
+privates
+указываете приватные ключи где нужно закрыть пустые счета
 
-## Why
+в командной строке доходите до файла с кодом и пишите
+npm install
 
-Each Solana account requires a fee of approximately 0.005 SOL, which can be recovered if the account is closed. Closing 100 accounts will return around 0.5 SOL back. [Read more](https://solana.com/docs/core/accounts)
-
-## Prerequisites
-
-Before running this application, ensure you have the following installed:
-
-- Node.js (version 12.x or higher)
-- npm (Node Package Manager)
-- TypeScript
-- Solana wallet
-- (Optional) RPC endpoint
-
-Set the environment variables in a `.env` file:
-
-```dotenv
-WALLET_PRIVATE_KEY=your_private_key_for_the_wallet
-RPC_ENDPOINT=rpc_endpoint_url
-COMMITMENT=processed
-```
-For rpc you can use free ones listed [here](https://solana.com/rpc)
-
-## Usage
-There are 2 commands
-- ```npm run clean``` Closes all accounts that do not have any tokens.
-- ```npm run fullclean``` Closes **!!!ALL!!!** accounts. **!!! IF YOU HAVE ANY TOKENS ON THOSE ACCOUNTS THEY WILL BE LOST FOREVER!!!**
+для закрытия пустых счетов пишите в командную строку
+npm run clean
 
